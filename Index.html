@@ -14,23 +14,54 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
     <!-- Import jquery -->
-    <script>
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- import popper.js -->
-    <script>
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <!-- import bootstrap.js -->
-    <script>
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
-    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- import fonts from fontawesome -->
-    <script>
-      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js">
-    </script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="style.css" rel="stylesheet" />
     <!-- Refers to our style.css file-->
   </head>
-  <body></body>
+  <body>
+    <!-- Navigation -->
+    <!-- Created navbar from bootstrap with light theme, and a sticky navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <!-- Our navbar logo -->
+        <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+        <!-- collapsible navbar toggle button creation -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id="navbarResponsive">
+            <!-- Creating navigation list -->
+            <!-- ml formats to the right by default -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <!-- # is a default for blank url -->
+                    <a class ="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class = "nav-link href="#">About Our Team!</a>
+                </li>
+                <li class = "nav-item">
+                    <a class = "nav-link href"#">Connect with Us!</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
