@@ -1,77 +1,72 @@
 <!-- HTML Header Stuff -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1" />
-    <title>Basic Bootstrap 4 Layout Tutorial Attempt</title>
 
-    <!-- imports -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1" />
+  <title>Basic Bootstrap 4 Layout Tutorial Attempt</title>
 
-    <!-- Import bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <!-- Import jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- import popper.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <!-- import bootstrap.js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <!-- import fonts from fontawesome -->
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link href="style.css" rel="stylesheet" />
-    <!-- Refers to our style.css file-->
-  </head>
-  <body>
-    <!-- Navigation -->
-    <!-- Created navbar from bootstrap with light theme, and a sticky navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <div class="container-fluid">
-        <!-- Our navbar logo -->
-        <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
-        <!-- collapsible navbar toggle button creation -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class = "collapse navbar-collapse" id="navbarResponsive">
-            <!-- Creating navigation list -->
-            <!-- ml formats to the right by default -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"> Homepage</a>
-                </li>
-                <li class="nav-item">
-                    <!-- # is a default for blank url -->
-                    <a class ="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class = "nav-link href="#">About Our Team!</a>
-                </li>
-                <li class = "nav-item">
-                    <a class = "nav-link href"#">Connect with Us!</a>
-                </li>
-            </ul>
-        </div>
+  <!-- imports -->
+
+  <!-- Import bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <!-- Import jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- import popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- import bootstrap.js -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- import fonts from fontawesome -->
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <!-- Refers to our style.css file-->
+</head>
+
+<body>
+  <!-- Navigation -->
+  <!-- Created navbar from bootstrap with light theme, and a sticky navigation -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+      <!-- Our navbar logo -->
+      <a class="navbar-brand" href="#"><img src="img/logo.png" /></a>
+      <!-- collapsible navbar toggle button creation -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" <span
+        class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- Creating navigation list -->
+        <!-- ml formats to the right by default -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> Homepage</a>
+          </li>
+          <li class="nav-item">
+            <!-- # is a default for blank url -->
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link href=" #">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link href=" #">About Our Team!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link href" #">Connect with Us!</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Image Slider -->
-    <div id="slides" class = "carousel slide" data-ride="carousel">
-      <ul class = "carousel-indicators">
-        <!-- Items for the carousel -->
-        <li data-target="#slides" data-slide-to="0"></li>
-        <li data-target="#slides" data-slide-to="1"></li>
-        <li data-target="#slides" data-slide-to="2"></li>
-      </ul>
+  <!-- Image Slider -->
+  <div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <!-- Items for the carousel -->
+      <li data-target="#slides" data-slide-to="0"></li>
+      <li data-target="#slides" data-slide-to="1"></li>
+      <li data-target="#slides" data-slide-to="2"></li>
+    </ul>
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/background.png">
@@ -89,6 +84,69 @@
         <img src="img/background3.png" alt="">
       </div>
     </div>
+  </div>
+
+  <!-- Jumbotron -->
+  <div class="container-fluid">
+    <div class="row Jumbotron">
+      <!-- Size the jumbotron text based on screen size -->
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10"></div>
+      <p class="lead">Web Hosting Service information and what not to lead
+        into this and Stuff.
+        HOSTING with the hostingest person
+      </p>
     </div>
-  </body>
+    <!-- size the button based on screen current size -->
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+      <a href="#">
+        <button type="button" class="btn btn-outline-secondary
+      btn-lg">Host me!</button></a>
+    </div>
+  </div>
+
+  <!-- Welcome! -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <!-- 12 = max bootstrap columns -->
+      <div class="col-12">
+        <h1 class="display-4">Build with ease!</h1>
+        <!-- HR = horizontal rule -->
+        <hr>
+        <div class="col-12">
+          <p class="lead">Welcome to my bootstrap 4 website!
+            it is full of wonderful information including
+            the ability to be a website and other useful
+            things!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three Columns! -->
+  <div class="container-fluid padding">
+    <div class="row text-center padding">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg">
+        <!-- I = icon tag. website and then icon code
+           Using font awesome -->
+        <i class="fas fa-code"></i>
+        <h3>HTML 5</h3>
+        <p>Built with the latest HTML5!</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-bold"></i>
+        <h3>Bootstrap 4.0</h3>
+        <p>Built with Bootstrap 4.0</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fab fa-css3"></i>
+        <h3>CSS3</h3>
+        <p> Built with the latest CSS!</p>
+      </div>
+
+    </div>
+    <hr class="my-4">
+  </div>
+</body>
+
 </html>
